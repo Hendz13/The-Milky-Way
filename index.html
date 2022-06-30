@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MILKY WAY</title>
+    <link rel="stylesheet" href="hci.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+</head>
+
+<body>
+
+    <div class="full-page">
+
+        <div class="navbar">
+
+            <div id='header1'>
+                <a href='index.html'><b>The Milky Way</b></a>
+                <D><b>Milk and More!</b></D>
+
+
+            </div>
+            <div id='hend' style="display:none;">
+                <logo> <img href='index.html' src="cow.png" class="logo"></logo>
+                <smth href='index.html'><b>The Milky Way</b></smth>
+                <!-- <smngd><b>Milk and More!</b></smngd> -->
+            </div>
+
+            <nav>
+                <ul id='MenuItems'>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block',document.getElementById('hend').style.display='block',document.getElementById('header1').style.display='none', alert ('To Sign in As employee , user : myuserid ,  password : mypswrd')"
+                            style="width:auto;"><b>Login</b></button></li>
+                    <!--<li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block',document.getElementById('header1').style.display= 'none' , document.getElementById('hend').style.display='block', alert ('To Sign in As Technician , user : myuserid1 ,  password : mypswrd1')" style="width:auto;"><b>Technician</b>
+                    </button></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block',document.getElementById('header1').style.display= 'none' , document.getElementById('hend').style.display='block', alert ('To Sign in As Manager , user : myuserid2 ,  password : mypswrd2')" style="width:auto;"><b>Production Managers</b></button></li>
+                -->
+                </ul>
+            </nav>
+        </div>
+
+        <div id='login-form' class='login-page'>
+            <div class='form-box'>
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' name='userid' class='input-field' placeholder='Email Id' required>
+                    <input type='password' name='pswrd' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='button' onclick="checklogin(this.form)" class='submit-btn'>Log in</button>
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name ' required>
+                    <input type='email' class='input-field' placeholder='Email Id' required>
+                    <input type='password' name='pass1' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' name='pass2' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box' required><span>I agree to the terms and                                                   conditions</span>
+                    <button type='button' class='submit-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script language="javascript">
+        function checklogin(form) {
+            if (form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                window.location.href = 'engineer1.html'
+            } else if (form.userid.value == "myuserid1" && form.pswrd.value == "mypswrd1") {
+                window.open('workerpage.html', "_top")
+            } else if (form.userid.value == "myuserid2" && form.pswrd.value == "mypswrd2") {
+                window.open('productionmanager1.html', "_top")
+            } else {
+                alert("Wrong Password or Username")
+            }
+
+
+        }
+    </script>
+
+    <script language="javascript">
+        function checkregister(form) {
+            if (form.pass1.value == form.pass2.value) {
+                window.alert("Thank You For Registeration !")
+                window.alert("We Will Contacted You Soon Through Your E-mail !!")
+            } else {
+                window.alert("Unmatched Passwords!")
+            }
+        }
+    </script>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+
+    <script>
+        var x1 = document.getElementById('hend');
+        var x2 = document.getElementById('header1');
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                x1.style.display = "none";
+                x2.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

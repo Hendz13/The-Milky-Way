@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="worker1.css">
+<meta charset="utf-8">
+<link href="https://googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="navbar">
+        <img src="cow 1.png" class="logo">
+        <a href="workerpage.html" style="margin-left: 15px;"></a>
+        <nav>
+            <ul>
+              <li> <a href="#currentprogress"><b>Current Progress</b></a></li>
+              <li> <a href="#oldprogress"><b>Previous Progress</b></a></li>
+              <li> <a href="#profile"><b>Profile</b></a></li>
+                <li> <a href="index.html"><b>Log Out</b></a></li>
+              
+            </ul>
+            
+        </nav>
+        
+    </div>
+    <div id="currentprogress"></div>
+    <div class="pageform" >
+      
+      <div class="row">
+        
+        <div class="col">
+   <label  for="cars" style="font-size: 40px;"><b>Choose a yard : </b></label><br><br>
+  <select name="yard" id="yards" >
+     <option value="Yard 0" >Choose Your Yard</option>
+    <option value="Yard 1">Yard 1--1</option>
+    <option value="Yard 2">Yard 2--1</option>
+    <option value="Yard 3">Yard 3--1</option>
+    <option value="Yard 4">Yard 1--2</option>
+    <option value="Yard 5">Yard 2--2</option>
+    <option value="Yard 6">Yard 3--2</option>
+    <option value="Yard 7">Yard 4--2</option>
+    <option value="Yard 8">Yard 5--2</option>
+    <option value="Yard 9">Yard 6--2</option>
+    <option value="Yard 10">Yard 7--2</option>
+    <option value="Yard 11">Yard 8--2</option>
+    <option value="Yard 12">Yard 9--2</option>
+    <option value="Yard 13">Yard 10--2</option>
+    <option value="Yard 14">Yard 11--2</option>
+    <option value="Yard 15">Yard 12--2</option>
+  </select>
+  <br> <br>
+  <label for="fname"style="font-size: 40px;"><b>Work :</b></label><br><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter Work Progress"><br><br>
+  <label for="fname"style="font-size: 40px;"><b>Cleaning:</b></label><br><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter Cleaning Progress"><br><br>
+  <br>
+  <button type="submit"  onclick="alert('Your Progress Has Been Updated ')"><b>Submit</b></button>
+  <!-- <input type="submit" value="Submit your work"> -->
+  
+</div>
+
+<div class="col">
+  <img src="worker11111.png">
+</div>
+</div>
+
+<div id="profile"><br></div>
+        
+                <div class="row" >
+                <div class="col">
+                    <img src="profile2.png" style="padding: 25px;">
+
+                    <br>
+                    <p2> <b>Personal Info :</b></p2>
+                    <br><br>
+                    <p1><b>Name : Ammar Yasser <br></b></p1>
+                    <p1><b>ID : 20202021 <br></b></p1>
+                    <p1><b>Tenure : 15years <br></b></p1>
+                    <p1><b>Title : Dpartment Manager <br></b></p1>
+                    <p1><b>Degree : Bachelor  <br></b></p1>
+                    <p1><b>Hire Date : 6/6/2006<br></b></p1>
+                    <p1><b>Assigned Yard : Yard 11--2 <br></b></p1>
+                </div>
+                <div class="col"> <br><br> <br><br> <br><br> <br><br> 
+                    <p2 ><b>Details : <br></b></p2>
+                    <br>
+                   <p1><b>Ammar Yasser Graduated from ABc</b></p1><br>
+                   <p1><b>Institute , Alexandria , Egypt With</b></p1><br>
+                   <p1><b>a Bachelor Degree in 2000 , upon joining</b></p1><br>
+                   <p1><b>the company as a jr. manager</b></p1><br>
+                   <p1><b>engineer in 2006 , he spent 4 months in</b></p1><br>
+                   <p1><b>orientation program at Cairo , he </b></p1><br>
+                   <p1><b>got promoted to Senior Manager</b></p1><br>
+                   <p1><b> in July 2014</b></p1><br>
+                </div>
+                </div>
+                <br><br><br>
+                </div>
+
+                <div id="oldprogress"><br></div>
+                <div class="row">
+                  <div class="col" >
+                    <p2><b>Last Month's Over-All Progress :</b></p2><br><br>
+                    <br><br>
+                    <div class="myProgress" style="margin-left: 40px;">
+                      <div style="  width: 85%;
+                      height: 30px;opacity: 70%;
+                      background-color: #04AA6D;
+                      border-radius : 10px;"><b>85%</b></div>
+                      </div>
+                  </div>
+
+                  <div class="col">
+                    <p1><b>Last Month's Progress in Production : </b></p1><br><br>
+                    <br><br>
+                    <div class="myProgress" style="margin-left: 40px;">
+                      <div style="  width: 90%;
+                      height: 30px;opacity: 70%;
+                      background-color: #04AA6D;
+                      border-radius : 10px;"><b>90%</b></div>
+                    </div> <br><br><br><br>
+                  <p1><b>Last Month's Progress in Cleaning : </b></p1><br><br>
+                  <br><br>
+                  <div class="myProgress" style="margin-left: 40px;">
+                    <div style="  width: 80%;
+                    height: 30px;opacity: 70%;
+                    background-color: #04AA6D;
+                    border-radius : 10px;"><b>80%</b></div>
+                  </div>
+                </div>
+                </div>
+  </div>
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+*
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.full-page
+{
+
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(web-farm-working-cow-x-2400.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.navbar
+{
+	
+	width: 100%;
+    display: flex;
+
+
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+	padding: 30px;
+	background-color: rgba(0,0,0,0.1);
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    
+}
+nav ul li button
+{
+	
+    font-size: 20px;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    
+}
+nav ul li button :hover
+{
+	color: lightgoldenrodyellow;
+	display: block;
+}
+logo
+{
+	animation: other-nav 1.5s;
+	margin: 0;
+	padding:0;
+	position: absolute;
+	top: 12px;
+	left :20px;
+	width: 50px;
+	cursor: pointer;
+}
+a
+{
+	
+
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 250px;
+	left: 400px;
+
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 100px;
+    display: block;
+	animation: nav-load 1.5s;
+
+}
+
+smth
+{
+
+	animation: other-nav 1.5s;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 60px;
+	
+
+
+}
+D{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 400px;
+	left: 550px;
+	animation: nav-load 1.5s;
+	display: block;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 60px;
+
+}
+smngd{
+
+	animation: other-nav 2s;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 100px;
+	left: 190px;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 30px;
+
+}
+#login-form
+{
+
+    display: none;
+}
+.form-box
+{
+	animation: nav-nav 2s;
+    width:380px;
+	height:480px;
+	top: 100px;
+	
+	position:relative;
+	margin:2% auto;
+	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px  #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: lightgoldenrodyellow;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 100px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: lightgoldenrodyellow;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:grey;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:lightgoldenrodyellow;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color: lightgoldenrodyellow;
+	font-size: 15;
+}
+
+@keyframes nav-load {
+	0%{
+		transform: translateX(-50%);
+		transition: transform 2s;
+		display: none;
+	}
+	100%{
+
+		transform: translateY(0) translateX(0);
+		transition: transform 2s;
+		display: flex;
+		
+	}
+	
+}
+@keyframes other-nav {
+	0%{
+		transform: translateY(20%);
+		
+	}
+	100%{
+		transform: translateY(0);
+		
+	}
+	
+}
+@keyframes nav-nav {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 380px;
+	}
+	
+}

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+	padding: 0;
+	font-family: 'Roboto','sans-serif;';
+	box-sizing:border-box;
+}
+.container
+{
+	width: 100%;
+	height :100vh;
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(web-farm-working-cow-x-2400.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	
+
+}
+.navbar{
+	padding: 20px;
+	width : 100%;
+	height: 12%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	background-color: rgba(0,0,0,0.2);
+	padding-right: 40px;
+}
+.logo
+{
+	width: 70px;
+	cursor: pointer;
+}
+nav
+{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px ;
+}
+nav ul li a:hover{
+	color: goldenrod;
+}
+a{
+    margin-top: 10px;
+    font-size: 60px;
+    color: beige;
+    padding: 15px;;
+    text-decoration: none;
+}
+.pageform{
+    display: block;
+    color: beige;
+   padding-top: 120px ;
+   padding-left: 11px;
+    font-size: 30px;
+    align-items: center;
+}
+#yards{
+    margin-left: 90px;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+}
+#fname{
+    margin-left: 90px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+}
+input  {
+    text-align: center;
+  }
+ select{
+    text-align-last:right;
+    padding-right: 45px;
+    
+  }
+  button{
+      margin-left: 290px;
+    width: 150px;
+    height: 40px;
+	color :#000;
+	font-size: 15px;
+	padding: 12px 0px;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+	cursor: pointer;
+  }
+  button:hover{
+	  transform: translateY(-10px);
+	  transition: transform 1s;
+  }
+  .row
+{
+	
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.col{
+	padding-right: 2%;
+	padding-left: 2%;
+	margin : 30px;
+    flex-basis: 50%;
+}
+.myProgress {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    /* margin-left: 50px; */
+    opacity: 90%;
+	text-align: center;
+	color: white;
+  }
+  p1{
+	font-size: 25px;
+	color: beige;
+	padding-left: 20px;
+	
+	
+}
+p2{
+
+	color: rgb(253, 253, 176);
+	font-size:35px ;
+	padding: 15px;
+	
+}
